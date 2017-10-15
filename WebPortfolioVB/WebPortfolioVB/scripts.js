@@ -1,0 +1,4 @@
+﻿const divClass = 
+    (
+        <h1>This is a heading 1</h1>
+    )
