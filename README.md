@@ -1,3 +1,3 @@
 # Building portfolio website
 
-Mainly for practice and to get a handle on C#, JavaScript and React js 
+Mainly for practice, but also in order to get a handle on C#, JavaScript and React js.  
