@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="Scripts/react/react.js" />
+    <link rel="stylesheet" type="text/css" href="Scripts/react/react-dom.min.js" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="test.jsx"></script> 
     <title>Web Portfolio</title>
@@ -12,181 +14,191 @@
 <body>
     <!--Navigation Menu-->
     <div class="navigation">
-        <div class="container">
-            <ul>
-                {myVar}
-                <li><a href="#" class="btn">Porfolio</a></li>
-                <li><a href="#about" class="btn">About</a></li>
-                <li><a href="#skills" class="btn">Skills</a></li>
-                <li><a href="#projects" class="btn">Projects</a></li>
-                <li><a href="#contact" class="btn">Contact</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#aboutskills" class="btn">About</a></li>
+            <li><a href="#skills" class="btn">Skills</a></li>
+            <li><a href="#projects" class="btn">Projects</a></li>
+            <li><a href="#contact" class="btn">Contact</a></li>
+        </ul>
     </div>
 
     <div class="main">
-
-        <div class="sections">
-            <div class="jumbotron" id="welcome">
-                <h1>Welcome</h1>
+        <div class="jumbotron" id="welcome">
+            <div class="container-fluid">
+                <!-- <h2 id="welcome-heading">Hello</h2>-->
+                <img src="images/laptop-593673_1920.jpg" alt="web design" id="laptop">
             </div>
         </div>
-        <!--About-->
-        <div class="sections">
-            <div class="jumbotron" id="about">
-                <div class="container">
-                    <h2 class="section-heading">About</h2>
-                    <br />
-                    <p>Hello there,<p>
-                    <p>My name is Vivien Clifford,</p>
-                    <p>I'm a aspiring Web Developer and also a passionate explorer of new technologies, new opportunities of making the world a better place.</p>
-                    <p>I enjoy creating interesting unique designs, programming outside the boundaries and having a database to back it up.</p>
-                    <p>Project I'm currently undertaking include learning to program with Javascript, React js, C# and statistical analytics R</p>
-                    <p>Ready for the next challenge</p>
+    </div>
+    <!--About-->
+    <div class="aboutskills">
+        <div class="sections" ">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <h2 class="section-heading">About</h2>
+                            <br />
+                            <p><b>Hello there,</b><p>
+                            <p><b>My name is Vivien Clifford,</b></p>
+                            <p><b>I'm a aspiring Web Developer and also a passionate explorer of new technologies, new opportunities of making the world a better place.</b></p>
+                            <p><b>I enjoy creating interesting designs, programming outside the boundaries and having a database to back it up.</b></p>
+                            <p><b>Project I'm currently undertaking include learning to program with Javascript, React js, C#</b></p>
+                            <!--<p>Ready for the next challenge</p>-->
+                        </div>
+
+                        <!--<div class="sections" id="skills">-->
+                        <div class="col-md-6">
+                            <h2 class="section-heading">Skills</h2>
+                            <table>
+                                <tr>
+                                    <th>Technical and Code</th>
+                                    <td>HTML</td>
+                                    <td>CSS</td>
+                                    <td>JavaScript</td>
+                                    <td>BootStrap</td>
+                                    <td>SQLServer</td>
+                                </tr>
+                                <tr>
+                                    <th>Creative and Design</th>
+                                    <td>Repsonsive Design</td>
+                                    <td>Basic fountdation of UX/UI</td>
+                                    <td>Elemets of design</td>
+                                    <td>Adobe: Photoshop, Dreamweaver, Flash</td>
+                                    <td>Use Cases, Wireframes, Workflows</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--Work Process-->
-        <div class="sections">
-            <div class="jumbotron" id="workProcess">
-                <div class="container">
+    </div>
+    <!--Work Process-->
+
+    <div class="sections" id="workProcess">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
                     <h2 class="section-heading">Work Processes</h2>
-                    <ol>
-                        <li>Ideas/Planning development</li>
-                        <li>Webpage Analysis & Design Finalisation</li>
-                        <li>Coding Design, Implementing Features</li>
-                        <li>Testing and Fixing code</li>
-                        <li>Delivery</li>
+                    <ol class="work-process-list">
+                        <li class="list-item">Ideas/Planning development</li>
+                        <li class="list-item">Webpage Analysis &amp; Design Finalisation</li>
+                        <li class="list-item">Coding Design, Implementing Features</li>
+                        <li class="list-item">Testing and Fixing code</li>
+                        <li class="list-item">Delivery</li>
                     </ol>
                     <div>
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
-                <!--Projects-->
-                <div class="sections">
-                    <div class="jumbotron" id="projects">
-                        <div class="container">
-                            <h2 class="section-heading">Projects</h2>
-                            <h3>Coming soon..</h3>
-                            <p>Under development</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://www.frachtwerk.de/assets/img/index.svg" alt="Demo">
-                                    <div class="caption">
-                                        <h3>Project 1</h3>
-                                        <p>An example thumbnail caption</p>
-                                        <a href="#" class="btn btn-primary">Button</a>
-                                        <a href="#" class="btn btn-default">Button</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://www.frachtwerk.de/assets/img/index.svg" alt="Demo">
-                                    <div class="caption">
-                                        <h3>Project 2</h3>
-                                        <p>An example thumbnail caption</p>
-                                        <a href="#" class="btn btn-primary">Button</a>
-                                        <a href="#" class="btn btn-default">Button</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://www.frachtwerk.de/assets/img/index.svg" alt="Demo">
-                                    <div class="caption">
-                                        <h3>Project 3</h3>
-                                        <p>An example thumbnail caption</p>
-                                        <a href="#" class="btn btn-primary">Button</a>
-                                        <a href="#" class="btn btn-default">Button</a>
-                                    </div>
-                                </div>
+    </div>
+
+    <!--</div>-->
+    <!--Projects-->
+    <div class="sections" id="projects">
+        <div class="container">
+            <h2 class="section-heading">Projects</h2>
+            <h3>Coming soon..</h3>
+            <p>Under development</p>
+        </div>
+        <div class="row">
+                <div class="item">
+                    <div class="col-sm-4 col-md-3">
+                        <div class="thumbnail">
+                            <img src="http://www.frachtwerk.de/assets/img/index.svg" alt="Demo">
+                            <div class="caption">
+                                <h3>Project 1</h3>
+                                <p>An example thumbnail caption</p>
+                                <a href="#" class="btn btn-primary">Button</a>
+                                <a href="#" class="btn btn-default">Button</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--Creative Inspiration-->
-                <div class="sections">
-                    <div class="jumbotron" id="createInspire">
-                        <div class="container">
-                            <h2 class="section-heading">Creative Inspiration</h2>
-                            <div>
-                            </div>
-                        </div>
-
-                        <div class="sections" id="skills">
-                            <div class="container">
-                                <h2 class="section-heading">Skills</h2>
-                                <table>
-                                    <tr>
-                                        <th><h4>Technical and Code</h4></th>
-                                        <td>HTML</td>
-                                        <td>CSS</td>
-                                        <td>JavaScript</td>
-                                        <td>BootStrap</td>
-                                        <td>SQLServer</td>
-                                    </tr>
-                                    <tr>
-                                        <th><h4>Creative and Design</h4></th>
-                                        <td>Repsonsive Design</td>
-                                        <td>Basic fountdation of UX/UI</td>
-                                        <td>Elemets of design</td>
-                                        <td>Adobe: Photoshop, Dreamweaver, Flash</td>
-                                        <td>Use Cases, Wireframes, Workflows</td>
-                                    </tr>
-                                </table>
+                <div class="item">
+                    <div class="col-sm-4 col-md-3">
+                        <div class="thumbnail">
+                            <img src="http://www.frachtwerk.de/assets/img/index.svg" alt="Demo">
+                            <div class="caption">
+                                <h3>Project 2</h3>
+                                <p>An example thumbnail caption</p>
+                                <a href="#" class="btn btn-primary">Button</a>
+                                <a href="#" class="btn btn-default">Button</a>
                             </div>
                         </div>
                     </div>
-                        <!--Contact-->
-                        <div class="sections">
-                            <div class="jumbotron" id="contact">
-                                <div class="container">
-                                    <h2 class="section-heading">Contact</h2>
-                                    <form>
-                                        <p>Name:</p>
-                                        <input type="text" name="firstName"> <br />
-                                        <p>Company:</p>
-                                        <input type="text" name="company"> <br />
-                                        <p>Email: </p>
-                                        <input type="email" name="email"> <br />
-                                        <p>Subject: </p>
-                                        <input type="text" name="subject"> <br />
-                                        <p>Comments: </p>
-                                        <textarea name="comments">Comments</textarea> <br />
-                                        <ul class="buttons">
-                                            <li><a class="btn">Submit</a></li>
-                                            <li><a class="btn" href="#">Cancel</a></li>
-                                        </ul>
-                                    </form>
-                                </div>
+                </div>
+                <div class="item">
+                    <div class="col-sm-4 col-md-3">
+                        <div class="thumbnail">
+                            <img src="http://www.frachtwerk.de/assets/img/index.svg" alt="Demo">
+                            <div class="caption">
+                                <h3>Project 3</h3>
+                                <p>An example thumbnail caption</p>
+                                <a href="#" class="btn btn-primary">Button</a>
+                                <a href="#" class="btn btn-default">Button</a>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
         </div>
-                    <!--Footer-->
-                    <div class="footer">
-                        <div class="container">
-                            <h2 class="section-heading">Contact</h2>
-                            <a href="#">Linked-in</a>
-                            <a href="#">GitHub</a>
-                            <p>Email: vivien.clifford18@gmail.com</p>
-                        </div>
-                    </div>
-                    <!--<script type="text/javascript" src="script.js"></script>-->
+    <!--</div>-->
+    <!--Creative Inspiration-->
+    <div class="sections" id="createInspire">
+        <div class="container">
+            <h2 class="section-heading">Creative Inspiration</h2>
+            <div>
+            </div>
+        </div>
 
-                    <script src="scripts/bootstrap/bootstrap.js"></script>
-                    <script src="scripts/bootstrap/bootstrap.min.js"></script>
-                    <script src="scripts/jquery/jquery-2.2.3.min.js"></script><!--Min for production use-->
-                    <!--<script src="scripts/jquery/jquery-2.2.3.js"></script>-->
-                    <!--<script>
-                     $('.carousel').carousel({
-                     interval: 2000
-                     })
 
-                    </script>-->
+    </div>
+    <!--</div>-->
+    <!--Contact-->
+    <!--<div class="sections">
+        <div class="jumbotron" id="contact">
+             <div class="container">
+                 <h2 class="section-heading">Contact</h2>
+                    <form>
+                        <p>Name:</p>
+                        <input type="text" name="firstName"> <br />
+                        <p>Company:</p>
+                        <input type="text" name="company"> <br />
+                        <p>Email: </p>
+                        <input type="email" name="email"> <br />
+                        <p>Subject: </p>
+                        <input type="text" name="subject"> <br />
+                        <p>Comments: </p>
+                        <textarea name="comments">Comments</textarea> <br />
+                        <ul class="buttons">
+                            <li><a class="btn">Submit</a></li>
+                            <li><a class="btn" href="#">Cancel</a></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!--</div>-->
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <h2 class="section-heading">Contact</h2>
+            <a href="http://linkedin.com/in/vivien-clifford-498a3a28/"><img class="social" title="Linkedin" src="images/linkedin-icon.png" alt="Linkedin" /></a>
+            <a href="https://github.com/VivienClifford"><img class="social" title="Github" src="images/GitHub-Mark-120px-plus.png" alt="GitHub" /></a>
+            <p>Email: vivien.clifford18@gmail.com</p>
+        </div>
+    </div>
+    <!--<script type="text/javascript" src="script.js"></script>-->
+
+    <script src="scripts/bootstrap/bootstrap.js"></script>
+    <script src="scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="scripts/jquery/jquery-2.2.3.min.js"></script><!--Min for production use-->
+
+    <script></script>
+
 </body>
 </html>

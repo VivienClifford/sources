@@ -1,4 +1,4 @@
-﻿@font-face{
+@font-face{
     font-family: Lobster;
     src:url('fonts/Lobster/lobster_1.3-webfont.eot');
     src:url('fonts/Lobster/lobeter_1.3-webfont.eot') format('embedded-opentype'),
@@ -24,42 +24,218 @@
         */
 body{
      font-family: Arizonia;
-     background-color: #2b2b2b;
-     color: black;
+     background-color: #c84145;
+     color: white;
+     /*color: black;*/
      height: 100%;
  }
 h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     font-family: Lobster;
-    color: #ffffff;
+    color: white;
+    /*color: black;*/
+}
+h2 {
+    font-size: 44px;
 }
 p{
     display: block;
+    font-size:large;
     font-family: 'Ecodesans', sans-serif;
-    color: #2b2b2b;
+    color: white;
+    /*color: #2b2b2b;*/
 }
 ul {
+    font-size:large;
     font-family: 'Ecodesans', sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow:hidden;
-    color: #2b2b2b;
+    color: white;
 }
 ol {
+    font-size:large;
     font-family: 'Ecodesans', Arizonia,sans-serif;
     display: block;
-    color: #2b2b2b;
+    color: white;
 }
-
+th {
+    font-size:large;
+    color: white;
+}
+td{
+    font-size:large;
+    color: white;
+}
 li{ 
     float: left; 
+    display: inline-block;
 }
 li a{
     display: inline-block;
+    font-size:large;
     font-family: 'Ecodesans', sans-serif;
     text-transform: uppercase;
     text-align: center;
     padding: 14px;
     text-decoration: none;
+}
+.btn{
+    background-color: transparent;
+    color: white;
+    font-size:medium;
+}
+.btn:hover{
+    opacity: 0.5;
+    color: white;
+    background-color: #000040; /*#2b2b2b;*/
+}
+.navigation {
+    position: fixed;
+    width: 1920px;
+    background-color:#000040;   /*black;       */
+    color: black;
+    padding-left:100px;
+
+}
+.sections {
+    height:1080px;
+}
+.jumbotron {
+    background-color: #c84145; 
+    height:1080px;
+    padding-top:36px;
+}
+.container {
+    padding-right: 450px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+img#laptop{
+    opacity: 0.5;
+}
+li.list-item{
+    float: left;
+    clear: left;
+}
+div.aboutskills {
+    background-color: #c0131c; 
+}
+#welcome.sections {
+    height: 920px;
+}
+div.col-md-6 {
+    padding: 10%;
+    position: center;
+    text-align: center;
+    border: 5px solid  #c84145;
+    
+}
+div.container-fluid{
+    height:100%; 
+     
+}
+div.col-md-12{
+    padding-top: 5%;
+    
+}
+div.col-lg-12{
+    padding-left: 10%;
+    position: center;
+    text-align: center;
+    border: 5px solid  #c84145;
+    
+}
+div.col-sm-4.col-md-4 {
+    padding: 10%;
+    position: center;
+    text-align: center;
+    border: 5px solid  #c84145;
+}
+/*#aboutskills{
+    height:100%;
+}*/
+/*#about.sections{
+    background-color: #c84145;
+    position:relative;
+    top: 300px;
+    left: 120px; 
+    height: 100%;
+    width: 50%;
+    padding: 45px;
+    border: 5px solid  rgba(255, 255, 255, .5);
+    opacity: 0.9;
+
+}
+
+#skills.sections {
+    background-color: #c84145;
+    position:relative; 
+    top: -300px;
+    left: 1000px;
+    height: 100%; 
+    width: 50%;
+    padding: 45px;
+    border: 5px solid rgba(255, 255, 255, .5);
+    opacity: 0.9;
+}
+*/
+
+div#workProcess.sections {
+    background-color:  #c84145; 
+    height: 1080px;
+}
+/*#workProcess.container {
+    padding: 45px;
+}*/
+#projects.sections {
+    background-color: #c0131c; 
+    height: 900px;
+}
+#createInspire.sections{
+    height: 900px;
+}
+div#createInspire.sections{
+    background-color: #c84145;
+    height: 500px;
+}
+.footer {
+    background-color: #c0131c; 
+    height: 300px;
+    /*top:2200px;*/
+}
+/*Projects*/
+@media screen and (max-width:1920px) {
+     .row{
+     max-width: 100%;
+     margin: 20px; 
+     /*padding-left: 100px;*/
+}
+}*/
+.thumbnail{
+    display: block;
+    height: 415px;
+    width: 300px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+}
+.caption {
+    width:300px;
+    /*padding-left:30px;*/
+}
+img {
+    height:960px;
+    width:1920px;
+    opacity: 0.9;
+}
+div.carousel-innner{
+    width: 1080px;
+}
+img.social{
+    height:50px;
+    width:50px;
 }

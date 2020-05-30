@@ -28,4 +28,19 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-getting-started!');
   });
+
+
+  // const add= async function(a, b) {
+  //   delay(10)
+
+  //   if (a<0) throw new Error('not supported')
+  //   return a+b
+  // }
+
+  // const r = await add(2, 5)
+
+  // r
+
 });
+
+
